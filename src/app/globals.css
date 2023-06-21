@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: #2F313E;
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+h1 {
+  font-size: 32px;
+
+  @media (min-width: 768px) {
+    font-size: 56px
+  }
+}
+
+.btn-white {
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-white:hover {
+  background-color: #e6ecef;
+}
+
+.btn-blue {
+  background-color: #0D6ECD;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-blue:hover {
+  background-color: #398adb;
+}
+
+.btn-text {
+  color: #0D6ECD;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-text:hover {
+  color: #398adb;
+}
+
+.blue--primary {
+  color: #0D6ECD;
+}
+
+.green--primary {
+  color: #7BFAC4;
+}
+
+.bg-blue--primary {
+  background-color: #0D6ECD;
+}
+
+.bg-green--primary {
+  background-color: #7BFAC4;
+}
+
+.bg-grey--primary {
+  background-color: #F1F3FA;
+}
+
+.bg-black--primary {
+  background-color: #2F313E;
+}
+
+.bg-black--secondary {
+  background-color: #4A4C5B;
+}
+
+.bg-grey--light {
+  background-color: #FBFBFB;
+}
